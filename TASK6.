@@ -1,0 +1,146 @@
+Write a program to loop through a list of numbers and add +2 to every value to elements in list
+
+list=[10,20,30,40,50]
+for i in list:
+    print(i,i+2);
+    
+ Write a program to get the below pattern
+ 
+ for i in range(5, 0, -1):
+    for j in range(i, 0, -1):
+        print(j, end="")
+    print()
+    
+  Python Program to Print the Fibonacci sequence
+  
+  num1=0
+num2=1
+num=int(input("Enter the limit:"))
+print(num1,num2)
+while(num-2):
+    c=num1+num2
+    num1=num2
+    num2=c
+    print(c,end='')
+    num=num-1
+    
+ Explain Armstrong number and write a code with a function
+ 
+ num=float(input("Enter the values of num:"))
+temp=num
+sum=0
+while(temp>0):
+    dig=temp%10
+    sum=sum+dig**3
+    temp=temp//10
+if(num==sum):
+    print("the given number is armstrong")
+else:
+    print("the given number is not armstrong")
+    
+Write a program to print the multiplication table of 9
+
+num=9
+for i in range(1,11):
+    print(num,'x',i,'=',num*i)
+    
+ Check if a program is negative or positive
+ 
+ num=int(input("Enter the num:"))
+if(num>0):
+    print("num is positive")
+elif(num==0):
+    print("num is zero")
+else:
+    print("num is negative")
+    
+ Write a program to convert the number of days to ages
+ 
+ days=10000;
+ages=days/365;
+print("Number of ages is:");
+print(ages)
+
+Solve Trigonometry problem using math function write a program to solve 
+
+import math
+x = 0.75
+print("math.cos(",x,"): ", math.cos(x));
+print("math.sin(",x,"): ", math.sin(x));
+print("math.tan(",x,"): ", math.tan(x));
+print("math.acos(",x,"): ", math.acos(x));
+print("math.asin(",x,"): ", math.asin(x));
+print("math.atan(",x,"): ", math.atan(x));
+y = 2
+print("math.atan2(",y,",",x,"): ", math.atan2(y,x))
+print("math.hypot(",x,",",y,"): ", math.hypot(x,y))
+
+Create a calculator only on a code level by using if condition (Basic arithmetic calculation)
+
+ch=int(input("Enter Choice(1-4): "))
+
+if ch==1:
+    a=int(input("Enter A:"))
+    b=int(input("Enter B:"))
+    c=a+b
+    print("Sum = ",c)
+elif ch==2:
+    a=int(input("Enter A:"))
+    b=int(input("Enter B:"))
+    c=a-b
+    print("Difference = ",c)
+elif  ch==3:
+    a=int(input("Enter A:"))
+    b=int(input("Enter B:"))
+    c=a*b
+    print("Product = ",c)
+elif ch==4:
+    a=int(input("Enter A:"))
+    b=int(input("Enter B:"))
+    c=a/b
+    print("Quotient = ",c)
+else:
+    print("Invalid Choice")
+OUTPUT:
+10 12
+20 22
+30 32
+40 42
+50 52
+54321
+4321
+321
+21
+1
+Enter the limit:10
+0 1
+12358132134Enter the values of num:5
+the given number is not armstrong
+9 x 1 = 9
+9 x 2 = 18
+9 x 3 = 27
+9 x 4 = 36
+9 x 5 = 45
+9 x 6 = 54
+9 x 7 = 63
+9 x 8 = 72
+9 x 9 = 81
+9 x 10 = 90
+Enter the num:-9
+num is negative
+Number of ages is:
+27.397260273972602
+math.cos( 0.75 ):  0.7316888688738209
+math.sin( 0.75 ):  0.6816387600233341
+math.tan( 0.75 ):  0.9315964599440725
+math.acos( 0.75 ):  0.7227342478134157
+math.asin( 0.75 ):  0.848062078981481
+math.atan( 0.75 ):  0.6435011087932844
+math.atan2( 2 , 0.75 ):  1.2120256565243244
+math.hypot( 0.75 , 2 ):  2.1360009363293826
+Enter Choice(1-4): 2
+Enter A:6
+Enter B:4
+Difference =  2
+
+Process finished with exit code 0
